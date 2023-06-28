@@ -1,0 +1,40 @@
+.header{
+    width: 100%;
+    height: max-content;
+}
+.header__rectangle_red{
+    background-color: red;
+    padding-top: 20px;
+    padding-left: 8%;
+}
+.header__img{
+    height: 60px;
+    width: 350px;
+}
+.header__rectangle_black{
+    position: relative;
+    background-color: black;
+    height: 30px;
+
+}
+.header__circle_big{
+    position: absolute;
+    margin-right: 8%;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    top: -30px;
+    right: 1%;
+    border: solid 10px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__circle_small{
+    background-color: #212121;
+    width: 30px;
+    height: 30px;
+    border: solid 10px black;
+    border-radius: 50%;
+}

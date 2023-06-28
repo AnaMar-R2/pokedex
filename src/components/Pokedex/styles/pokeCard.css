@@ -1,0 +1,238 @@
+.pokecard{
+    width: 100%;
+    max-width: 280px;
+    font-size: 1rem;
+    border-radius: 0.8em;
+    border: 0.5em solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s ease ;
+}
+.pokecard:hover{
+    transform: scale(1.03);
+}
+.pokecard__header{
+    border-radius: 0.2em 0.2em 0 0  ;
+    aspect-ratio: 2;
+    position: relative;
+    background-color: #ccc;
+}
+.pokecard__img{
+    position: absolute;
+    width: 60%;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pokecard__body{
+    padding: 3em 1em 1.5em 1em;
+    border-bottom: solid 1px #ccc6 ;
+}
+.pokecard__name{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+.pokecard__types{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.pokecard__types_item{
+    text-transform: capitalize;
+    position: relative;
+}
+.pokecard__types_item::before{
+    content: '/';
+    position: absolute;
+    left: -1em;
+}
+.pokecard__types_item:first-child::before{
+    content: '';
+}
+.pokecard__footer{
+    padding-top: 0.5em;
+}
+.pokecard__stats{
+    padding: 0.5em 0.5em 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1em 0.2em;
+}
+.pokecard__stats_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+.pokecard__stats_label{
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+.pokecard__stats_value{
+    font-weight: 800;
+    font-size: 1rem;
+}
+.normal{
+    color: #BC6B7C ;
+}
+.fighting{
+    color: #F1613C ;
+}
+.flying{
+    color: #1d809b ;
+}
+.poison{
+    color:  #A564E3 ;
+}
+.ground{
+    color:  #895C1A ;
+}
+.rock{
+    color:  #8D8D94 ;
+}
+.bug{
+    color:  #3BB039 ;
+}
+.ghost{
+    color:  #454AA8 ;
+}
+.steel{
+    color:  #728881 ;
+}
+.fire{
+    color:  #E35825 ;
+}
+.water{
+    color:  #1479FB ;
+}
+.grass{
+    color: #499876 ;
+}
+.electric{
+    color:  #2B319B ;
+}
+.psychic{
+    color:  #8d1a89 ;
+}
+.ice{
+    color:  #64CBF5 ;
+}
+.dragon{
+    color:  #56A4AE ;
+}
+.dark{
+    color:  #0D1211 ;
+}
+.fairy{
+    color:  #C23867 ;
+}
+.bg-normal{
+    background-image: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);;
+}
+.bg-fighting{
+    background-image: linear-gradient(176.83deg, #8e3c28 -8.78%, #e66241 169.09%, #d87c65 242.33%);;
+}
+.bg-flying{
+    background-image: linear-gradient(179.75deg, #0d5c5f -19.96%, #248eb5 43.67%, #48c4dc 138.4%);
+}
+.bg-poison{
+    background-image: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);;
+}
+.bg-ground{
+    background-image: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);;
+}
+.bg-rock{
+    background-image: linear-gradient(177.03deg, #757575 -11.97%, #8D8D94 57.49%, #dbdbdb 135.64%);;
+}
+.bg-bug{
+    background-image: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);;
+}
+.bg-ghost{
+    background-image:  linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);;
+}
+.bg-steel{
+    background-image: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);;
+}
+.bg-fire{
+    background-image: linear-gradient(176.37deg, #d42f32 -32.26%, #E35825 22.55%, #E8AE1B 125.72%);;
+}
+.bg-water{
+    background-image: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);;
+}
+.bg-grass{
+    background-image: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);;
+}
+.bg-electric{
+    background-image: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);;
+}
+.bg-psychic{
+    background-image: linear-gradient(179.75deg, #5f0c6a -19.96%, #8d1a89 43.67%, #f394eb 138.4%);
+}
+.bg-ice{
+    background-image: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);;
+}
+.bg-dragon{
+    background-image: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);;
+}
+.bg-dark{
+    background-image: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);;
+}
+.bg-fairy{
+    background-image: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+}
+.border-grass{
+    border-color: #ABDAC6 ;
+}
+.border-fire{
+    border-color:  #ed6f31 ;
+}
+.border-water{
+    border-color:  #1479FB ;
+}
+.border-bug{
+    border-color:  #3BB039 ;
+}
+.border-normal{
+    border-color: #975563 ;
+}
+.border-poison{
+    border-color:  #A564E3 ;
+}
+.border-electric{
+    border-color:  #2B319B ;
+}
+.border-ground{
+    border-color:  #895C1A ;
+}
+.border-fighting{
+    border-color: #af4a31 ;
+}
+.border-rock{
+    border-color:  #8D8D94 ;
+}
+.border-ghost{
+    border-color:  #454AA8 ;
+}
+.border-ice{
+    border-color:  #64CBF5 ;
+}
+.border-dark{
+    border-color:  #0f1513 ;
+}
+.border-dragon{
+    border-color:  #56A4AE ;;
+}
+.border-steel{
+    border-color:  #728881 ;;
+}
+.border-psychic{
+    border-color:  #8d1a89 ;
+}
+.border-fairy{
+    border-color:  #C23867 ;
+}
+.border-flying{
+    border-color: #1d809b ;
+}
